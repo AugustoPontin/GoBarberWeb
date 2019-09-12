@@ -1,5 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
+import 'react-perfect-scrollbar/dist/css/styles.css';
+import 'react-toastify/dist/ReactToastify.css';
+
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
@@ -14,12 +17,16 @@ export default createGlobalStyle`
     outline: 0;
   }
 
-  html, body, #root {
-    height: 100%;
+  html, body {
+    min-height: 100%
+  }
+
+  #root {
+      min-height: 100%;
   }
 
   body {
-    -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased;
   }
 
   body, input, button {
